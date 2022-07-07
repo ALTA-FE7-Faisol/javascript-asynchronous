@@ -1,12 +1,13 @@
 function jajanBoba (uang, callback )  {
     let uangSisa = uang
     setTimeout (function()  {
-    uangSisa -= 5000
+    let hargaBoba=5000;
+    uangSisa -= hargaBoba;
     if (uangSisa < 0) {
         console.log("Maaf uang kamu belum cukup untuk membeli jajan boba");
     } else {
-        console.log("Kamu jajan boba dengan harga Rp. 5000 ");
-        console.log("Sisa uang kamu Rp.", uangSisa);
+        console.log("Kamu jajan boba dengan harga Rp.",hargaBoba);
+        console.log("Sisa uang kamu Rp.",uangSisa);
     }
     }, 5000)
     setTimeout(() => {
@@ -15,13 +16,14 @@ function jajanBoba (uang, callback )  {
 }
     
 function jajanSeblak (uang)  {
-    let uangSisa = uang-8000
+    let hargaSeblak=8000;
+    let uangSisa = uang-hargaSeblak;
     if (uangSisa < 0) {
         console.log("Maaf uang kamu belum cukup untuk membeli jajan seblak");
-        console.log("Sisa uang kamu sebesar Rp.", uang);
+        console.log("Sisa uang kamu sebesar Rp.",uang);
     } else {
-        console.log("Kamu jajan seblak dengan harga Rp. 8000");
-        console.log("Sisa uang kamu Rp.", uangSisa);
+        console.log("Kamu jajan seblak dengan harga Rp.",hargaSeblak);
+        console.log("Sisa uang kamu Rp.",uangSisa);
     }
 }
     
